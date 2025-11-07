@@ -16,6 +16,10 @@ technical-diagrams/
 ├── workflows/        # Process flows, dataflows, and workflow diagrams
 ├── architecture/     # System architecture, component diagrams
 ├── processes/        # Business processes, decision trees
+├── data-models/      # Data models, database schemas, ERD diagrams
+├── reference/        # Reference materials, cheat sheets, API docs
+├── templates/        # Reusable diagram templates and starter files
+├── exports/          # Exported diagrams (PNG, SVG, PDF)
 └── README.md
 ```
 
@@ -66,8 +70,12 @@ technical-diagrams/
    - `workflows/` - Process and data flows
    - `architecture/` - System designs
    - `processes/` - Business processes
-4. Update this README with diagram description
-5. Commit and push
+   - `data-models/` - Database schemas, ERDs, dimension structures
+   - `reference/` - Reference materials, cheat sheets
+   - `templates/` - Reusable templates
+4. Optionally export to `exports/` folder (PNG, SVG, PDF)
+5. Update this README with diagram description
+6. Commit and push
 
 ## Tools
 
