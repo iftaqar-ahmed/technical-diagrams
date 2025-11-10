@@ -1,0 +1,134 @@
+# Live Nation OneStream Model Sync Data Flow
+# Import Instructions: File > Import > CSV > Select this file > Use default settings
+#
+# Node Styles:
+#   - Segment Cubes (Yellow): Event, Festival, PSS, Restaurant Ops, Artist Nation, Sponsorship, Ticketing
+#   - Specialty Cubes (Blue): Fixed Expense, People, Capex, Rollforward
+#   - Reporting Cubes (Red): Concerts, Global
+#
+# Edge Styles:
+#   - Actual Scenario: Green arrows
+#   - Budget/Forecast Scenario: Orange arrows
+#
+
+## Configuration
+# stylename=segmentcube
+# styles={"segmentcube":"rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#000000;fontStyle=1;fontSize=14;"}
+# stylename=specialtycube
+# styles={"specialtycube":"rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#000000;fontStyle=1;fontSize=14;"}
+# stylename=reportingcube
+# styles={"reportingcube":"rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#000000;fontStyle=1;fontSize=14;"}
+# stylename=actualflow
+# styles={"actualflow":"edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2ca02c;strokeWidth=2;fontSize=11;"}
+# stylename=budgetflow
+# styles={"budgetflow":"edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ff7f0e;strokeWidth=2;fontSize=11;"}
+
+## Nodes
+# label: %label%
+# style: %style%
+# namespace: %namespace%
+# left:
+# top:
+# width: 160
+# height: 80
+# ignore: label,style,namespace
+# nodespacing: 100
+# levelspacing: 200
+# edgespacing: 50
+# layout: horizontalflow
+
+## Data
+label,style,namespace
+Event,segmentcube,segments
+Festival,segmentcube,segments
+PSS,segmentcube,segments
+Restaurant Ops,segmentcube,segments
+Artist Nation,segmentcube,segments
+Sponsorship,segmentcube,segments
+Ticketing,segmentcube,segments
+Fixed Expense,specialtycube,specialty
+People,specialtycube,specialty
+Capex,specialtycube,specialty
+Rollforward,specialtycube,specialty
+Concerts,reportingcube,reporting
+Global,reportingcube,reporting
+
+## Connections (Edges)
+# label: %label%
+# style: %style%
+# source: %from%
+# target: %to%
+# namespace: %namespace%
+
+from,to,label,style,namespace
+Event,People,Headcount (Act),actualflow,actual
+Event,Capex,Capex (Act),actualflow,actual
+Event,Concerts,Show P&L (Act),actualflow,actual
+Event,Global,P&L (Act),actualflow,actual
+Festival,People,Headcount (Act),actualflow,actual
+Festival,Capex,Capex (Act),actualflow,actual
+Festival,Concerts,Show P&L (Act),actualflow,actual
+Festival,Global,P&L (Act),actualflow,actual
+PSS,People,Headcount (Act),actualflow,actual
+PSS,Capex,Capex (Act),actualflow,actual
+PSS,Concerts,Show Metrics (Act),actualflow,actual
+PSS,Global,P&L (Act),actualflow,actual
+Restaurant Ops,People,Headcount (Act),actualflow,actual
+Restaurant Ops,Capex,Capex (Act),actualflow,actual
+Restaurant Ops,Concerts,Ops Metrics (Act),actualflow,actual
+Restaurant Ops,Global,P&L (Act),actualflow,actual
+Artist Nation,People,Headcount (Act),actualflow,actual
+Artist Nation,Capex,Capex (Act),actualflow,actual
+Artist Nation,Global,P&L (Act),actualflow,actual
+Sponsorship,People,Headcount (Act),actualflow,actual
+Sponsorship,Capex,Capex (Act),actualflow,actual
+Sponsorship,Global,P&L (Act),actualflow,actual
+Ticketing,People,Headcount (Act),actualflow,actual
+Ticketing,Capex,Capex (Act),actualflow,actual
+Ticketing,Global,Ticketing Metrics (Act),actualflow,actual
+Fixed Expense,Global,Fixed P&L (Act),actualflow,actual
+People,Global,Headcount (Act),actualflow,actual
+Capex,Global,Capex (Act),actualflow,actual
+Rollforward,Global,Cash Flow (Act),actualflow,actual
+Rollforward,Capex,Capex (Act),actualflow,actual
+Concerts,Global,Consolidated (Act),actualflow,actual
+Fixed Expense,Event,Fixed P&L (Bud),budgetflow,budget
+Fixed Expense,Festival,Fixed P&L (Bud),budgetflow,budget
+Fixed Expense,PSS,Fixed P&L (Bud),budgetflow,budget
+Fixed Expense,Restaurant Ops,Fixed P&L (Bud),budgetflow,budget
+Fixed Expense,Artist Nation,Fixed P&L (Bud),budgetflow,budget
+Fixed Expense,Sponsorship,Fixed P&L (Bud),budgetflow,budget
+Fixed Expense,Ticketing,Fixed P&L (Bud),budgetflow,budget
+Fixed Expense,Global,Fixed P&L (Bud),budgetflow,budget
+People,Event,Labor (Bud),budgetflow,budget
+People,Festival,Labor (Bud),budgetflow,budget
+People,PSS,Labor (Bud),budgetflow,budget
+People,Restaurant Ops,Labor (Bud),budgetflow,budget
+People,Artist Nation,Labor (Bud),budgetflow,budget
+People,Sponsorship,Labor (Bud),budgetflow,budget
+People,Ticketing,Labor (Bud),budgetflow,budget
+People,Global,Labor (Bud),budgetflow,budget
+Capex,Event,Capex (Bud),budgetflow,budget
+Capex,Festival,Capex (Bud),budgetflow,budget
+Capex,PSS,Capex (Bud),budgetflow,budget
+Capex,Restaurant Ops,Capex (Bud),budgetflow,budget
+Capex,Artist Nation,Capex (Bud),budgetflow,budget
+Capex,Sponsorship,Capex (Bud),budgetflow,budget
+Capex,Ticketing,Capex (Bud),budgetflow,budget
+Capex,Global,Capex (Bud),budgetflow,budget
+Sponsorship,Festival,Festival Sponsor (Bud),budgetflow,budget
+Sponsorship,Ticketing,Ticket Sponsor (Bud),budgetflow,budget
+Sponsorship,Global,P&L (Bud),budgetflow,budget
+Ticketing,Sponsorship,Reverse Alloc (Bud),budgetflow,budget
+Ticketing,Global,P&L (Bud),budgetflow,budget
+Rollforward,Ticketing,Advances (Bud),budgetflow,budget
+Event,Concerts,Show P&L (Bud),budgetflow,budget
+Event,Global,P&L (Bud),budgetflow,budget
+Festival,Concerts,Show P&L (Bud),budgetflow,budget
+Festival,Global,P&L (Bud),budgetflow,budget
+PSS,Concerts,P&L (Bud),budgetflow,budget
+PSS,Global,P&L (Bud),budgetflow,budget
+Restaurant Ops,Concerts,P&L (Bud),budgetflow,budget
+Restaurant Ops,Global,P&L (Bud),budgetflow,budget
+Artist Nation,Global,P&L (Bud),budgetflow,budget
+Concerts,Global,Consolidated (Bud),budgetflow,budget
