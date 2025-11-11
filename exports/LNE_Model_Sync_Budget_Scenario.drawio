@@ -157,14 +157,14 @@
         </mxCell>
 
         <!-- UPWARD ROLLUPS: Segments → Concerts (4 syncs) -->
-        <mxCell id="event-concerts" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.75;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="concerts">
+        <mxCell id="event-concerts" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.75;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="concerts">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="110" y="665" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="festival-concerts" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="concerts">
+        <mxCell id="festival-concerts" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="concerts">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="270" y="750" />
@@ -172,22 +172,22 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="pss-concerts" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="pss" target="concerts">
+        <mxCell id="pss-concerts" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="pss" target="concerts">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="restops-concerts" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.75;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="restops" target="concerts">
+        <mxCell id="restops-concerts" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.75;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="restops" target="concerts">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
         <!-- UPWARD ROLLUPS: Segments → Global (8 syncs) -->
-        <mxCell id="event-global" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.75;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="global">
+        <mxCell id="event-global" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.75;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="global">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="110" y="495" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="festival-global" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="global">
+        <mxCell id="festival-global" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="global">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="270" y="560" />
@@ -195,7 +195,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="pss-global" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="pss" target="global">
+        <mxCell id="pss-global" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="pss" target="global">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="430" y="570" />
@@ -203,7 +203,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ticketing-global" value="P&L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=1;entryY=0.75;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="ticketing" target="global">
+        <mxCell id="ticketing-global" value="P&amp;L+Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=1;entryY=0.75;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="ticketing" target="global">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1070" y="495" />
@@ -212,7 +212,7 @@
         </mxCell>
 
         <!-- UPWARD ROLLUPS: Concerts → Global -->
-        <mxCell id="concerts-global" value="Consolidated P&L" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#b85450;strokeWidth=3;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="concerts" target="global">
+        <mxCell id="concerts-global" value="Consolidated P&amp;L" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#b85450;strokeWidth=3;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="concerts" target="global">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
@@ -241,7 +241,7 @@
         <mxCell id="stats-title" value="Budget/Forecast Scenario Statistics" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="60" y="1210" width="400" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="stats-content" value="• Total Model Syncs: 40&#xa;&#xa;DOWNWARD ALLOCATIONS (24 syncs):&#xa;  • Fixed Expense → All Segments + Global: 8 syncs (Fixed/OIE P&L)&#xa;  • People → All Segments + Global: 8 syncs (Labor P&L + Headcount)&#xa;  • Capex → All Segments + Global: 8 syncs (Capex Metrics + Depreciation)&#xa;&#xa;UPWARD ROLLUPS (12 syncs):&#xa;  • Concert Segments → Concerts: 4 syncs (Event, Festival, PSS, RestOps)&#xa;  • All Segments → Global: 8 syncs (P&L + Metrics consolidation)&#xa;&#xa;CROSS-SEGMENT FLOWS (4 syncs):&#xa;  • Sponsorship → Festival/Ticketing: 2 syncs (Partnership revenue)&#xa;  • Rollforward → Ticketing → Global: 2 syncs (Advances + cash flow)&#xa;&#xa;Flow Pattern: Corporate allocations flow DOWN, then segments roll UP to reporting" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
+        <mxCell id="stats-content" value="• Total Model Syncs: 40&#xa;&#xa;DOWNWARD ALLOCATIONS (24 syncs):&#xa;  • Fixed Expense → All Segments + Global: 8 syncs (Fixed/OIE P&amp;L)&#xa;  • People → All Segments + Global: 8 syncs (Labor P&amp;L + Headcount)&#xa;  • Capex → All Segments + Global: 8 syncs (Capex Metrics + Depreciation)&#xa;&#xa;UPWARD ROLLUPS (12 syncs):&#xa;  • Concert Segments → Concerts: 4 syncs (Event, Festival, PSS, RestOps)&#xa;  • All Segments → Global: 8 syncs (P&amp;L + Metrics consolidation)&#xa;&#xa;CROSS-SEGMENT FLOWS (4 syncs):&#xa;  • Sponsorship → Festival/Ticketing: 2 syncs (Partnership revenue)&#xa;  • Rollforward → Ticketing → Global: 2 syncs (Advances + cash flow)&#xa;&#xa;Flow Pattern: Corporate allocations flow DOWN, then segments roll UP to reporting" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11" vertex="1" parent="1">
           <mxGeometry x="60" y="1250" width="1100" height="120" as="geometry" />
         </mxCell>
 

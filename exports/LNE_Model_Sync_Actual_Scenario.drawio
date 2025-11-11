@@ -86,14 +86,14 @@
         <mxCell id="event-capex" value="Capex" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.75;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="capex">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="event-concerts" value="Show P&L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.75;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="concerts">
+        <mxCell id="event-concerts" value="Show P&amp;L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.75;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="concerts">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="110" y="545" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="event-global" value="Show P&L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="global">
+        <mxCell id="event-global" value="Show P&amp;L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0;entryY=0.5;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="event" target="global">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="110" y="380" />
@@ -108,7 +108,7 @@
         <mxCell id="festival-capex" value="Capex" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#82b366;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="capex">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="festival-concerts" value="Show P&L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="concerts">
+        <mxCell id="festival-concerts" value="Show P&amp;L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="concerts">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="270" y="580" />
@@ -116,7 +116,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="festival-global" value="Show P&L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="global">
+        <mxCell id="festival-global" value="Show P&amp;L + Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.25;entryY=1;strokeColor=#b85450;strokeWidth=2;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="festival" target="global">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="270" y="440" />
@@ -168,7 +168,7 @@
         </mxCell>
 
         <!-- Arrows: Concerts → Global -->
-        <mxCell id="concerts-global" value="Consolidated P&L" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#b85450;strokeWidth=3;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="concerts" target="global">
+        <mxCell id="concerts-global" value="Consolidated P&amp;L" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;strokeColor=#b85450;strokeWidth=3;fontSize=10;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="concerts" target="global">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
