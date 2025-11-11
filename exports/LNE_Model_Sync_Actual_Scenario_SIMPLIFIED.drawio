@@ -1,0 +1,223 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Actual Scenario - Model Syncs Only" id="actual-scenario-simple">
+    <mxGraphModel dx="2400" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1400" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="ACTUAL SCENARIO - Model Syncs Only (Cube-to-Cube Flows)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="20" width="1200" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- TIER 1: Global Cube -->
+        <mxCell id="global" value="Global Cube&lt;br&gt;(Final Consolidation)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="120" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- TIER 2: Concerts Cube -->
+        <mxCell id="concerts" value="Concerts Cube&lt;br&gt;(Concert Aggregation)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="600" y="300" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- TIER 3: Specialty Cubes -->
+        <mxCell id="people" value="People Cube&lt;br&gt;(Headcount Metrics)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="350" y="480" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="capex" value="Capex Cube&lt;br&gt;(Capex Metrics)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="900" y="480" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rollforward" value="Rollforward Cube&lt;br&gt;(PPM Data)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="480" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- TIER 4: Segment Cubes -->
+        <mxCell id="event" value="Event" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="festival" value="Festival" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pss" value="PSS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="580" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="restops" value="Restaurant Ops" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="820" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="artistnation" value="Artist Nation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sponsorship" value="Sponsorship" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ticketing" value="Ticketing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="720" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- UPWARD FLOWS: Segments to People (7 arrows) -->
+        <mxCell id="event-people" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.2;entryY=1;" edge="1" parent="1" source="event" target="people">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="festival-people" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.4;entryY=1;" edge="1" parent="1" source="festival" target="people">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pss-people" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.6;entryY=1;" edge="1" parent="1" source="pss" target="people">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="restops-people" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.8;entryY=1;" edge="1" parent="1" source="restops" target="people">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="artistnation-people" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=1;entryY=0.8;" edge="1" parent="1" source="artistnation" target="people">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sponsorship-people" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=1;entryY=0.5;" edge="1" parent="1" source="sponsorship" target="people">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ticketing-people" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=1;entryY=0.2;" edge="1" parent="1" source="ticketing" target="people">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- UPWARD FLOWS: Segments to Capex (7 arrows) -->
+        <mxCell id="event-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0;entryY=0.8;" edge="1" parent="1" source="event" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="festival-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0;entryY=0.5;" edge="1" parent="1" source="festival" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pss-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0;entryY=0.2;" edge="1" parent="1" source="pss" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="restops-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.2;entryY=1;" edge="1" parent="1" source="restops" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="artistnation-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.4;entryY=1;" edge="1" parent="1" source="artistnation" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sponsorship-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.6;entryY=1;" edge="1" parent="1" source="sponsorship" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ticketing-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.8;entryY=1;" edge="1" parent="1" source="ticketing" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- UPWARD FLOWS: Event & Festival to Concerts (2 arrows) -->
+        <mxCell id="event-concerts" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.3;entryY=1;" edge="1" parent="1" source="event" target="concerts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="festival-concerts" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.7;entryY=1;" edge="1" parent="1" source="festival" target="concerts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- UPWARD FLOWS: Segments to Global (3 arrows - Event, Festival, Ticketing) -->
+        <mxCell id="event-global" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0;entryY=0.8;" edge="1" parent="1" source="event" target="global">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="630" />
+              <mxPoint x="850" y="630" />
+              <mxPoint x="850" y="184" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="festival-global" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0;entryY=0.5;" edge="1" parent="1" source="festival" target="global">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="640" />
+              <mxPoint x="870" y="640" />
+              <mxPoint x="870" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ticketing-global" value="" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=1;entryY=0.8;" edge="1" parent="1" source="ticketing" target="global">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1610" y="630" />
+              <mxPoint x="1430" y="630" />
+              <mxPoint x="1430" y="184" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- UPWARD FLOWS: Specialty to Global (3 arrows) -->
+        <mxCell id="people-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0;entryY=0.2;" edge="1" parent="1" source="people" target="global">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="420" />
+              <mxPoint x="900" y="420" />
+              <mxPoint x="900" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="capex" target="global">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rollforward-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0.5;exitY=0;entryX=1;entryY=0.2;" edge="1" parent="1" source="rollforward" target="global">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="420" />
+              <mxPoint x="1380" y="420" />
+              <mxPoint x="1380" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Rollforward to Capex -->
+        <mxCell id="rollforward-capex" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="rollforward" target="capex">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="120" width="420" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="130" width="420" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-segment" value="Segment Cubes (7)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="170" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-specialty" value="Specialty Cubes (3)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="210" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-reporting" value="Reporting Cubes (2)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="250" width="160" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-arrow-green" value="Upward Flow (Data Consolidation)" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=2.5;" edge="1" parent="1">
+          <mxGeometry x="0.1" y="-10" relative="1" as="geometry">
+            <mxPoint x="1820" y="305" as="sourcePoint" />
+            <mxPoint x="1930" y="305" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-arrow-red" value="To Reporting/Global" style="endArrow=classic;html=1;strokeColor=#b85450;strokeWidth=2.5;" edge="1" parent="1">
+          <mxGeometry x="0.1" y="-10" relative="1" as="geometry">
+            <mxPoint x="1820" y="330" as="sourcePoint" />
+            <mxPoint x="1930" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Flow Pattern Notes -->
+        <mxCell id="notes-bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="400" width="420" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="notes-title" value="ACTUAL SCENARIO FLOW PATTERN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="410" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="notes-text" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;KEY CHARACTERISTICS:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;✓ All segments SEND data UP&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;✓ Specialty cubes RECEIVE from segments&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;✓ Specialty cubes SEND UP to Global&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;✓ NO downward allocations&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;SEGMENTS TO PEOPLE/CAPEX:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;• All 7 segments send metrics&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;SEGMENTS TO CONCERTS:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;• Only Event &amp;amp; Festival (concert segments)&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;SEGMENTS TO GLOBAL:&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;• Event, Festival, Ticketing only&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Total Model Syncs: ~23&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="450" width="380" height="230" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
