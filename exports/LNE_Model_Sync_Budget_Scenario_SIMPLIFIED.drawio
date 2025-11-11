@@ -1,0 +1,591 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Budget Scenario - Clean" id="budget-clean">
+    <mxGraphModel dx="3200" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3200" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TITLE -->
+        <mxCell id="title" value="Live Nation - Budget/Forecast Scenario Model Syncs (40 Total)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="30" width="1600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- LEGEND -->
+        <mxCell id="legend-title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-segment" value="Segment Cube" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-specialty" value="Specialty Cube" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-reporting" value="Reporting Cube" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-down" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="340" as="sourcePoint" />
+            <mxPoint x="180" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-down-label" value="Downward Allocation (24)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-up" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="390" as="sourcePoint" />
+            <mxPoint x="180" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-up-label" value="Upward Rollup (12)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-cross" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=3;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="440" as="sourcePoint" />
+            <mxPoint x="180" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-cross-label" value="Cross-Segment (4)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="450" width="160" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- GLOBAL CUBE (TOP - receives everything) -->
+        <mxCell id="global" value="Global&lt;br&gt;(Final Consolidation)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1400" y="120" width="240" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- SPECIALTY CUBES ROW (send DOWN, receive external data) -->
+        <mxCell id="fixed" value="Fixed Expense&lt;br&gt;(Corporate Allocations)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="600" y="350" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="people" value="People&lt;br&gt;(Labor Budget)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="350" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="capex" value="Capex&lt;br&gt;(Capital Planning)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1440" y="350" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rollforward" value="Rollforward&lt;br&gt;(PPM Projects)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1860" y="350" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- CONCERTS REPORTING CUBE -->
+        <mxCell id="concerts" value="Concerts&lt;br&gt;(Concert Segments Only)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="600" y="600" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- SEGMENT CUBES ROW (receive DOWN, send UP) -->
+        <mxCell id="event" value="Event" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="850" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="festival" value="Festival" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="640" y="850" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pss" value="PSS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="980" y="850" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="restops" value="Restaurant Ops" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1320" y="850" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="artistnation" value="Artist Nation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1660" y="850" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sponsorship" value="Sponsorship" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2000" y="850" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ticketing" value="Ticketing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2340" y="850" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- DOWNWARD ALLOCATIONS: Fixed Expense to All Segments (7 arrows, LEFT CHANNEL x=400-460) -->
+        <mxCell id="fixed-event" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="event">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="500" as="sourcePoint" />
+            <mxPoint x="390" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="520" />
+              <mxPoint x="400" y="520" />
+              <mxPoint x="400" y="780" />
+              <mxPoint x="390" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fixed-festival" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="festival">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="500" as="sourcePoint" />
+            <mxPoint x="730" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="520" />
+              <mxPoint x="410" y="520" />
+              <mxPoint x="410" y="780" />
+              <mxPoint x="730" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fixed-pss" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="pss">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="500" as="sourcePoint" />
+            <mxPoint x="1070" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="520" />
+              <mxPoint x="420" y="520" />
+              <mxPoint x="420" y="780" />
+              <mxPoint x="1070" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fixed-restops" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="restops">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="500" as="sourcePoint" />
+            <mxPoint x="1410" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="520" />
+              <mxPoint x="430" y="520" />
+              <mxPoint x="430" y="780" />
+              <mxPoint x="1410" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fixed-artistnation" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="artistnation">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="500" as="sourcePoint" />
+            <mxPoint x="1750" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="520" />
+              <mxPoint x="440" y="520" />
+              <mxPoint x="440" y="780" />
+              <mxPoint x="1750" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fixed-sponsorship" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="sponsorship">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="500" as="sourcePoint" />
+            <mxPoint x="2090" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="520" />
+              <mxPoint x="450" y="520" />
+              <mxPoint x="450" y="780" />
+              <mxPoint x="2090" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fixed-ticketing" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="ticketing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="500" as="sourcePoint" />
+            <mxPoint x="2430" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="520" />
+              <mxPoint x="460" y="520" />
+              <mxPoint x="460" y="780" />
+              <mxPoint x="2430" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- DOWNWARD ALLOCATIONS: People to All Segments (7 arrows, LEFT CHANNEL x=470-530) -->
+        <mxCell id="people-event" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="event">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="500" as="sourcePoint" />
+            <mxPoint x="390" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="540" />
+              <mxPoint x="470" y="540" />
+              <mxPoint x="470" y="790" />
+              <mxPoint x="390" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people-festival" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="festival">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="500" as="sourcePoint" />
+            <mxPoint x="730" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="540" />
+              <mxPoint x="480" y="540" />
+              <mxPoint x="480" y="790" />
+              <mxPoint x="730" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people-pss" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="pss">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="500" as="sourcePoint" />
+            <mxPoint x="1070" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="540" />
+              <mxPoint x="490" y="540" />
+              <mxPoint x="490" y="790" />
+              <mxPoint x="1070" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people-restops" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="restops">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="500" as="sourcePoint" />
+            <mxPoint x="1410" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="540" />
+              <mxPoint x="500" y="540" />
+              <mxPoint x="500" y="790" />
+              <mxPoint x="1410" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people-artistnation" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="artistnation">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="500" as="sourcePoint" />
+            <mxPoint x="1750" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="540" />
+              <mxPoint x="510" y="540" />
+              <mxPoint x="510" y="790" />
+              <mxPoint x="1750" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people-sponsorship" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="sponsorship">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="500" as="sourcePoint" />
+            <mxPoint x="2090" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="540" />
+              <mxPoint x="520" y="540" />
+              <mxPoint x="520" y="790" />
+              <mxPoint x="2090" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people-ticketing" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="ticketing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="500" as="sourcePoint" />
+            <mxPoint x="2430" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="540" />
+              <mxPoint x="530" y="540" />
+              <mxPoint x="530" y="790" />
+              <mxPoint x="2430" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- DOWNWARD ALLOCATIONS: Capex to All Segments (7 arrows, LEFT CHANNEL x=540-600) -->
+        <mxCell id="capex-event" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="event">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="500" as="sourcePoint" />
+            <mxPoint x="390" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="560" />
+              <mxPoint x="540" y="560" />
+              <mxPoint x="540" y="800" />
+              <mxPoint x="390" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-festival" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="festival">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="500" as="sourcePoint" />
+            <mxPoint x="730" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="560" />
+              <mxPoint x="550" y="560" />
+              <mxPoint x="550" y="800" />
+              <mxPoint x="730" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-pss" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="pss">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="500" as="sourcePoint" />
+            <mxPoint x="1070" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="560" />
+              <mxPoint x="560" y="560" />
+              <mxPoint x="560" y="800" />
+              <mxPoint x="1070" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-restops" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="restops">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="500" as="sourcePoint" />
+            <mxPoint x="1410" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="560" />
+              <mxPoint x="570" y="560" />
+              <mxPoint x="570" y="800" />
+              <mxPoint x="1410" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-artistnation" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="artistnation">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="500" as="sourcePoint" />
+            <mxPoint x="1750" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="560" />
+              <mxPoint x="580" y="560" />
+              <mxPoint x="580" y="800" />
+              <mxPoint x="1750" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-sponsorship" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="sponsorship">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="500" as="sourcePoint" />
+            <mxPoint x="2090" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="560" />
+              <mxPoint x="590" y="560" />
+              <mxPoint x="590" y="800" />
+              <mxPoint x="2090" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-ticketing" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="ticketing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="500" as="sourcePoint" />
+            <mxPoint x="2430" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="560" />
+              <mxPoint x="600" y="560" />
+              <mxPoint x="600" y="800" />
+              <mxPoint x="2430" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- DOWNWARD ALLOCATIONS: Specialty to Global (3 arrows, DIRECT horizontal) -->
+        <mxCell id="fixed-global" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fixed" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="350" as="sourcePoint" />
+            <mxPoint x="1400" y="165" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="280" />
+              <mxPoint x="1300" y="280" />
+              <mxPoint x="1300" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="people-global" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="people" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="350" as="sourcePoint" />
+            <mxPoint x="1520" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1130" y="280" />
+              <mxPoint x="1520" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="capex-global" value="" style="endArrow=classic;html=1;strokeColor=#d79b00;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="capex" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1550" y="350" as="sourcePoint" />
+            <mxPoint x="1640" y="165" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1550" y="280" />
+              <mxPoint x="1740" y="280" />
+              <mxPoint x="1740" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- UPWARD ROLLUPS: Concert Segments to Concerts (4 arrows, GREEN) -->
+        <mxCell id="event-concerts" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="event" target="concerts">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="850" as="sourcePoint" />
+            <mxPoint x="620" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="740" />
+              <mxPoint x="620" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="festival-concerts" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="festival" target="concerts">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="850" as="sourcePoint" />
+            <mxPoint x="710" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="730" y="750" />
+              <mxPoint x="710" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pss-concerts" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="pss" target="concerts">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="850" as="sourcePoint" />
+            <mxPoint x="800" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1070" y="740" />
+              <mxPoint x="800" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="restops-concerts" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="restops" target="concerts">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1410" y="850" as="sourcePoint" />
+            <mxPoint x="820" y="645" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1410" y="720" />
+              <mxPoint x="900" y="720" />
+              <mxPoint x="900" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- UPWARD ROLLUPS: All Segments to Global (7 arrows, GREEN, RIGHT CHANNEL x=2700-2760) -->
+        <mxCell id="event-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="event" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="850" as="sourcePoint" />
+            <mxPoint x="1460" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="700" />
+              <mxPoint x="2700" y="700" />
+              <mxPoint x="2700" y="260" />
+              <mxPoint x="1460" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="festival-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.375;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="festival" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="850" as="sourcePoint" />
+            <mxPoint x="1490" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="730" y="700" />
+              <mxPoint x="2710" y="700" />
+              <mxPoint x="2710" y="260" />
+              <mxPoint x="1490" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pss-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="pss" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="850" as="sourcePoint" />
+            <mxPoint x="1520" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1070" y="700" />
+              <mxPoint x="2720" y="700" />
+              <mxPoint x="2720" y="260" />
+              <mxPoint x="1520" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="restops-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.625;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="restops" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1410" y="850" as="sourcePoint" />
+            <mxPoint x="1550" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1410" y="700" />
+              <mxPoint x="2730" y="700" />
+              <mxPoint x="2730" y="260" />
+              <mxPoint x="1550" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="artistnation-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="artistnation" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1750" y="850" as="sourcePoint" />
+            <mxPoint x="1580" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1750" y="700" />
+              <mxPoint x="2740" y="700" />
+              <mxPoint x="2740" y="260" />
+              <mxPoint x="1580" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sponsorship-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="sponsorship" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2090" y="850" as="sourcePoint" />
+            <mxPoint x="1640" y="188" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2090" y="700" />
+              <mxPoint x="2750" y="700" />
+              <mxPoint x="2750" y="188" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ticketing-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ticketing" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2430" y="850" as="sourcePoint" />
+            <mxPoint x="1640" y="165" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2430" y="700" />
+              <mxPoint x="2760" y="700" />
+              <mxPoint x="2760" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- UPWARD ROLLUPS: Concerts to Global (1 arrow, GREEN) -->
+        <mxCell id="concerts-global" value="" style="endArrow=classic;html=1;strokeColor=#82b366;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="concerts" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="600" as="sourcePoint" />
+            <mxPoint x="1400" y="188" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="550" />
+              <mxPoint x="1200" y="550" />
+              <mxPoint x="1200" y="188" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- CROSS-SEGMENT FLOWS: Sponsorship to Festival (1 arrow, PURPLE) -->
+        <mxCell id="sponsorship-festival" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=3;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sponsorship" target="festival">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2000" y="885" as="sourcePoint" />
+            <mxPoint x="820" y="885" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1900" y="885" />
+              <mxPoint x="1900" y="1000" />
+              <mxPoint x="870" y="1000" />
+              <mxPoint x="870" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- CROSS-SEGMENT FLOWS: Sponsorship to Ticketing (1 arrow, PURPLE) -->
+        <mxCell id="sponsorship-ticketing" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=3;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sponsorship" target="ticketing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2180" y="885" as="sourcePoint" />
+            <mxPoint x="2340" y="885" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2230" y="885" />
+              <mxPoint x="2230" y="960" />
+              <mxPoint x="2310" y="960" />
+              <mxPoint x="2310" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- CROSS-SEGMENT FLOWS: Rollforward to Ticketing (1 arrow, PURPLE) -->
+        <mxCell id="rollforward-ticketing" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=3;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rollforward" target="ticketing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1970" y="440" as="sourcePoint" />
+            <mxPoint x="2430" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1970" y="580" />
+              <mxPoint x="2270" y="580" />
+              <mxPoint x="2270" y="820" />
+              <mxPoint x="2430" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- CROSS-SEGMENT FLOWS: Rollforward to Global (1 arrow, PURPLE) -->
+        <mxCell id="rollforward-global" value="" style="endArrow=classic;html=1;strokeColor=#9673a6;strokeWidth=3;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="rollforward" target="global">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1970" y="350" as="sourcePoint" />
+            <mxPoint x="1640" y="143" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1970" y="300" />
+              <mxPoint x="2100" y="300" />
+              <mxPoint x="2100" y="143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
