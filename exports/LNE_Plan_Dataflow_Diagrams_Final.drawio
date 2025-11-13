@@ -536,7 +536,7 @@
         <mxCell id="Qcs1SifqHEhpEs8ahmST-3" value="GLOBAL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=5;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1020" y="230" width="400" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="Qcs1SifqHEhpEs8ahmST-4" value="Corporate Consolidation&#xa;(12 flows in)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+        <mxCell id="Qcs1SifqHEhpEs8ahmST-4" value="Corporate Consolidation&lt;br&gt;(9 flows in)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=12;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="1030" y="360" width="260" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Qcs1SifqHEhpEs8ahmST-5" value="CONCERTS/SBS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;fontSize=18;fontStyle=1;align=center;" parent="1" vertex="1">
@@ -745,13 +745,13 @@
         <mxCell id="QDJ8chdIIiKi7KNS3BfK-19" value="HIERARCHICAL STRUCTURE" style="text;html=1;align=center;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="1760" y="150" width="400" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="QDJ8chdIIiKi7KNS3BfK-20" value="Tier 1: GLOBAL (1 cube, 12 flows in)" style="text;html=1;align=left;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="QDJ8chdIIiKi7KNS3BfK-20" value="Tier 1: GLOBAL (1 cube, 9 flows in)" style="text;html=1;align=left;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="1780" y="185" width="360" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QDJ8chdIIiKi7KNS3BfK-21" value="Tier 2: CONCERTS (1 cube, 4 in / 1 out)" style="text;html=1;align=left;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="1780" y="210" width="360" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QDJ8chdIIiKi7KNS3BfK-22" value="Tier 3: Segments + Specialty (9 cubes)" style="text;html=1;align=left;fontSize=11;" parent="1" vertex="1">
+        <mxCell id="QDJ8chdIIiKi7KNS3BfK-22" value="Tier 3: Segments + Specialty (7 cubes)" style="text;html=1;align=left;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="1780" y="235" width="360" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QDJ8chdIIiKi7KNS3BfK-23" value="Tier 4: Allocators (People, Capex)" style="text;html=1;align=left;fontSize=11;" parent="1" vertex="1">
