@@ -18,3 +18,8 @@ desktop.ini
 *.tmp
 *.temp
 ~$*.drawio
+
+# Archive folders (working drafts)
+_ARCHIVE_*/
+_OLD/
+archives/
